@@ -1,5 +1,5 @@
 {
-  "name": "@oddsocketsai/react-native-sdk",
+  "name": "oddsockets-react-native",
   "version": "1.0.0",
   "description": "Official React Native SDK for OddSockets real-time messaging platform",
   "main": "lib/commonjs/index",
@@ -10,17 +10,7 @@
   "files": [
     "src",
     "lib",
-    "android",
-    "ios",
-    "cpp",
-    "*.podspec",
     "!lib/typescript/example",
-    "!ios/build",
-    "!android/build",
-    "!android/gradle",
-    "!android/gradlew",
-    "!android/gradlew.bat",
-    "!android/local.properties",
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
@@ -50,7 +40,7 @@
     "socket.io"
   ],
   "repository": "https://github.com/jyswee/oddsockets-react-native-sdk",
-  "author": "OddSockets Team <support@oddsockets.com>",
+  "author": "Joe Wee, Tyga.Cloud Ltd <jyswee@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jyswee/oddsockets-react-native-sdk/issues"

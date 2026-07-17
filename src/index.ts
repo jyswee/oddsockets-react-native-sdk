@@ -5,7 +5,7 @@ import ManagerDiscovery from './ManagerDiscovery';
 import { EnhancedFeatures } from './EnhancedFeatures';
 
 // Create the main export object that works with React Native
-const OddSocketsSDK = OddSockets;
+const OddSocketsSDK: any = OddSockets;
 
 // Attach additional exports to the main constructor
 OddSocketsSDK.OddSockets = OddSockets;

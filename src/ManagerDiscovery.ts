@@ -5,7 +5,7 @@
  * all routing and load balancing transparently.
  */
 class ManagerDiscovery {
-  private managerUrl: string = 'https://manager1.oddsockets.tyga.network';
+  private managerUrl: string = 'https://connect.oddsockets.tyga.network';
 
   /**
    * Get the manager URL (always returns the main endpoint)
