@@ -1,0 +1,20 @@
+{
+  "name": "oddsockets-react-native-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runnable pub/sub round-trip demo for the OddSockets React Native SDK",
+  "main": "demo.ts",
+  "scripts": {
+    "demo": "ts-node demo.ts"
+  },
+  "dependencies": {
+    "oddsockets-react-native": "file:.."
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^4.5.2"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+OddSockets React Native SDK - containerised two-client round-trip proof
+Recorded: 2026-07-21T17:59:49Z
+Command:  docker build -f demo/Dockerfile -t oddsockets-rn-demo . && \
+          docker run --rm -e ODDSOCKETS_API_KEY=ak_... oddsockets-rn-demo
+Platform: live OddSockets manager https://connect.oddsockets.tyga.network
+Two independent clients (alice subscriber, bob publisher) on separate
+connections; alice receiving bob's nonce-tagged message proves the message
+travelled through the worker - it cannot be a local echo.
+------------------------------------------------------------------------
+Target manager: https://connect.oddsockets.tyga.network
+Channel: demo-84qcfpxu
+Nonce: rtqqj5lx
+[connect] connecting both clients...
+[connect] alice = connected, bob = connected
+[alice] subscribed to demo-84qcfpxu (presence on)
+[bob] published, ack = {"messageId":"9343bc49-1fd1-4ed0-9545-ad03498a5c37","channel":"demo-84qcfpxu","timestamp":"2026-07-21T17:59:54.527Z","subscriberCount":1}
+[alice] received bob's message (nonce matched) - real round-trip.
+[alice] presence: 1 user(s).
+[alice] unsubscribed.
+
+OK - cross-client round-trip verified on demo-84qcfpxu
+------------------------------------------------------------------------
+Exit status: 0 (round-trip verified)
